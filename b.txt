@@ -1,0 +1,16 @@
+mkdir testegit
+cd testegit
+touch a.txt
+git init
+git add .
+echo 'preparou arqs no stage para commit. Para unstage um arq. use git reset HEAD nome_arq '
+git commit -m "Primeiro commit"
+echo 'para remover este commit use git reset --soft HEAD~1 '
+echo ' e entao faca novo commit e adicione arq. de novo'
+echo ' crie repository no github e copie url https... do repo'
+git remote add origin https://github.com/poliedrum/testegit.git
+echo 'setou remoto'
+git remote -v
+echo 'visuliza se remote ficou configurado'
+git push origin master
+echo 'empurrou as mudancas no repo local para o repo remote'
